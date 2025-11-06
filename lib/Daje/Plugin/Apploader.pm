@@ -1,6 +1,6 @@
 package Daje::Plugin::Apploader;
 use Mojo::Base 'Mojolicious::Plugin', -signatures;
-use v5.40;
+use v5.42;
 
 use Mojo::Loader qw {load_class};
 use Daje::Database::Migrator;
