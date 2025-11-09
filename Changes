@@ -2,6 +2,7 @@ Revision history for Perl extension Daje-Plugin-Apploader
 
 {{$NEXT}}
 
+    - 2015-11-09 Documentation corrected
     - 2025-11-07 Installation of missing plugins added
     - original version
 
