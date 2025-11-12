@@ -81,7 +81,7 @@ use CPAN;
 # janeskil1525 E<lt>janeskil1525@gmail.comE<gt>
 #
 
-our $VERSION = "0.11";
+our $VERSION = "0.20";
 
 sub register ($self, $app, $config) {
 
@@ -172,7 +172,7 @@ sub _find_missing_modules($self, $plugin, $modules, $install) {
 
     for(my $i = 0; $i < $length; $i++) {
         my $class = @{$modules}[$i]->{namespace} . "::" . $plugin;
-        if (!grep(/^$class$/, @{$modules->{modules}})) {
+        if (!grep(/^$class$/, @{$modules})) {
             if (!grep(/^$class$/, @{$install})) {
                 push @{$install}, $class;
             } elsif (grep(/^$class$/, @{$install})) {
