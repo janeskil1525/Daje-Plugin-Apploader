@@ -81,7 +81,7 @@ use CPAN;
 # janeskil1525 E<lt>janeskil1525@gmail.comE<gt>
 #
 
-our $VERSION = "0.30";
+our $VERSION = "0.35";
 
 sub register ($self, $app, $config) {
 
